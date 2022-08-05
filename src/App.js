@@ -8,11 +8,13 @@ import Form from './Form';
 import ClassCounterOne from './ClassUseEffect';
 import FuncUseEffect from  './FuncUseEffect'
 import UseEffectDidMount from './UseEffectDidMount';
-
+// import Todo from './components/Todo'
+import Todo from './components/Todo'
+import TodoFunc from './components/TodoFunc';
 function App() {
   return (
     <>
-    <div className="App">
+    {/* <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -53,7 +55,18 @@ function App() {
        <p>We can pass props from class component to funcctional component and vice versa </p>
        <p>Initially, Container Components were class components and functioal components were presentational components, but now we use functional for both, but we should keep presentational and class components separately to improve reusability</p>
 
-    </div>
+    </div> */}
+    
+    <p>We are buidling todo app</p>
+    
+    <Todo />
+    <TodoFunc />
+    <p>
+      We created Todo app using class components
+    </p>
+    <p>
+      We converted into functional component (Notice, we removed this, and function keywords and this.setState() is also replaced)
+    </p>
     </>
     
   );
